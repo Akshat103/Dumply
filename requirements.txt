@@ -25,8 +25,8 @@ scipy==1.7.3
 gunicorn==20.1.0
 
 # Tensorflow
-tensorflow==2.9.0
-tensorflow-estimator==2.9.0
-tensorflow-io-gcs-filesystem==0.26.0
+tensorflow==2.8
+tensorflow-estimator==2.8
+tensorflow-io-gcs-filesystem==0.23.1
 
 Werkzeug==2.1.2
