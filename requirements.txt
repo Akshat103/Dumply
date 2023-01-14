@@ -23,6 +23,7 @@ numpy==1.21.6
 scipy==1.7.3
 
 gunicorn==20.1.0
+protobuf==3.20.1
 
 # Tensorflow
 tensorflow==2.8
