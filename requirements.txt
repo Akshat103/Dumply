@@ -22,6 +22,8 @@ Keras-Preprocessing==1.1.2
 numpy==1.21.6
 scipy==1.7.3
 
+gunicorn==20.1.0
+
 # Tensorflow
 tensorflow==2.9.0
 tensorflow-estimator==2.9.0
