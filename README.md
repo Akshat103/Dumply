@@ -73,7 +73,7 @@ As government launches an e-waste management campaign to encourage residents to 
 
 ## Authors
 
-* **Akshat Tamrakar** - ** - [Akshat Tamrakar](https://github.com/Akshat103) - *Built ReadME Template*
+* **Akshat Tamrakar** - ** - [Akshat Tamrakar](https://github.com/Akshat103) - *Create ReadME*
 
 ## Acknowledgements
 
