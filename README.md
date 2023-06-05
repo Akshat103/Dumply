@@ -26,7 +26,7 @@
 
 ## About The Project
 
-![Screen Shot](images/screenshot.png)
+![Screen Shot](images/screenshot.PNG)
 
 Dumply is a web app that categorizes e-waste into five classes: Keyboard, Mouse, Laptop, Monitor/Television, and Mobile. It helps users identify the proper disposal methods for each category.
 
@@ -65,6 +65,7 @@ On Windows
 
 As government launches an e-waste management campaign to encourage residents to recycle their electronic devices properly. As part of the campaign, we promote the use of Dumply as a tool for e-waste classification and disposal information.
 
+![Screen Shot](images/dp.PNG)
 
 ### Creating A Pull Request
 
