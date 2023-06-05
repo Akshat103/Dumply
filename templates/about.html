@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumply</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/about.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/main.css') }}">
+  </head>
+
+  <body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="/">Dumply</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="{{url_for('about_page')}}">About</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="/predict">Predict</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+    <div class="about-me">
+      <h2>About Us</h2>
+      <p>
+        Welcome to the About Me page for our Dumply App! We are a team of
+        developers and environmental enthusiasts who are passionate about using
+        technology to address the growing problem of electronic waste.
+      </p>
+      <h5>
+        Our app aims to help individuals and businesses predict their e-waste
+        generation and find sustainable solutions to manage it. We understand
+        that e-waste is a complex issue that requires a multifaceted approach,
+        and our app is just one small step towards a more sustainable future.
+      </h5>
+
+      <p></p>
+
+      <p>
+        We believe that technology has the power to drive change and make a
+        positive impact on the world. By creating this app, we hope to empower
+        individuals and businesses to take action towards reducing their e-waste
+        footprint and promoting a circular economy.
+      </p>
+      <p>
+        Thank you for choosing our app and joining us in our mission to create a
+        more sustainable future!
+      </p>
+    </div>
+    <div class="Tech-Used">
+      <h2>Technology Used</h2>
+      <p>
+        We used <mark>VGG-19 Convolutional Neural Network</mark> to sift through
+        different types of E-waste datasets and then predict an E-waste with
+        it's Classification.
+      </p>
+      <p>
+        For Our Web Page, we used <mark>Flask</mark> as our backend templates as our Frontend.
+      </p>
+    </div>
+    <div class="seg">
+      <h2>Why E-waste Segregation is Important</h2>
+      <p>
+        E-waste refers to electronic waste, including discarded electronics like
+        old mobile phones, computers, televisions, and other electronic devices.
+      </p>
+      <p>
+        E-waste contains toxic materials like lead, mercury, cadmium, and
+        brominated flame retardants, which can cause serious health and
+        environmental problems if not handled properly.
+      </p>
+      <h5>
+        Most e-waste is generated in developed countries but is often shipped to
+        developing countries for disposal, where it is often treated in unsafe
+        and unregulated ways, causing further harm to the environment and public
+        health.
+      </h5>
+      <p>
+        E-waste segregation is essential to ensure that valuable materials like
+        copper, gold, and silver can be extracted and recycled.
+      </p>
+    </div>
+    <div class="Facts">
+      <h2>Some data regarding E-waste</h2>
+      <p>
+        According to the United Nations, the world generated 53.6 million metric
+        tons of electronic waste in 2019, and this number is expected to reach
+        74 million metric tons by 2030.
+      </p>
+      <h5>
+        The United Nations estimated that only 17.4% of the global e-waste
+        generated in 2019 was collected and recycled, highlighting a significant
+        gap in e-waste management practices.
+      </h5>
+      <p>
+        E-waste segregation and recycling can provide a significant economic
+        opportunity, with the recovery of materials like gold, silver, copper,
+        and palladium estimated to be worth up to USD 21 billion globally.
+      </p>
+    </div>
+    <div class="end">
+      <h2>That's Why:</h2>
+      <p>
+        E-waste segregation is not just an environmental issue but also a social
+        and economic one, as it affects the health and livelihoods of people
+        working in the informal e-waste sector and the availability of valuable
+        materials for future use.
+      </p>
+    </div>
+  </body>
+  <script src="static\js\main.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>

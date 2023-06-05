@@ -1,71 +1,81 @@
-# E-waste-managment
-HackNITR
+<br/>
+<p align="center">
+  <h3 align="center">Dumply</h3>
 
-**ABSTRACT**
+  <p align="center">
+    Dumply is a web app designed to classify electronic waste (e-waste) into different categories.
+    <br/>
+    <br/>
+    <a href="https://github.com/Akshat103/Dumply/issues">Report Bug</a>
+    .
+    <a href="https://github.com/Akshat103/Dumply/issues">Request Feature</a>
+  </p>
+</p>
 
-**Data Collection**
+![Contributors](https://img.shields.io/github/contributors/Akshat103/Dumply?color=dark-green) ![Forks](https://img.shields.io/github/forks/Akshat103/Dumply?style=social) ![Stargazers](https://img.shields.io/github/stars/Akshat103/Dumply?style=social) ![Issues](https://img.shields.io/github/issues/Akshat103/Dumply) 
+
+## Table Of Contents
+
+* [About the Project](#about-the-project)
+* [Built With](#built-with)
+* [Getting Started](#getting-started)
+  * [Installation](#installation)
+* [Usage](#usage)
+* [Authors](#authors)
+* [Acknowledgements](#acknowledgements)
+
+## About The Project
+
+![Screen Shot](images/screenshot.png)
+
+Dumply is a web app that categorizes e-waste into five classes: Keyboard, Mouse, Laptop, Monitor/Television, and Mobile. It helps users identify the proper disposal methods for each category.
+
+The app promotes environmentally friendly practices by ensuring e-waste is managed and recycled appropriately. Dumply aims to reduce the environmental impact of electronic devices through efficient waste classification and recycling.
+
+## Built With
+
+* Flask
+* Python
+* VGG19
+
+## Getting Started
 
 
-   We discovered that there was a dearth of annotated, high-quality e-waste imagery data when we searched for it.
-   We have used:
-1.	Version 3 of Starter: e-waste dataset 93b07fb8-a from kaggle as it contained images in 4 category:
+### Installation
 
-              1.	Keyboard
-              2.	Mouse
-              3.	Laptop
-              4.	Monitor/Television
-              5.	Mobile
-    We used its 3rd version as upgraded versions contained images of plastic bottles also. Which were not meant to our model.
-    
+To install the project locally from, follow these steps:
 
-2.	As data collected was not sufficient we got data for keyboard, laptop and monitor form images.cv
+1. Clone the repository:
+```git clone https://github.com/Akshat103/Dumply```
 
-**Design of Model**
+2. Create a virtual environment:
+```python3 -m venv myenv```
+
+3. Activate the virtual environment: 
+On Linux/Mac  
+```myenv/bin/activate```
+On Windows   
+ ```myenv\Scripts\activate```
+
+4. Install project dependencies:
+```pip install -r requirements.txt```
 
 
-**Tried simple cnn**
+## Usage
 
-•Firstly we used a simple convolution neural network with 3 layers of 2D Maxpooling extracting 16 ,32 and 64 filters. Used an output layer with softmax activation function.
-With limited data and without dropouts and early stopping the model got over fitted with large difference between training accuracy(0.9600) and validation accuracy(0.5102)
+As government launches an e-waste management campaign to encourage residents to recycle their electronic devices properly. As part of the campaign, we promote the use of Dumply as a tool for e-waste classification and disposal information.
 
-**Applied VGG19 Model**
 
-•In simple language VGG is a deep CNN used to classify images. There are 19 weight layers in VGG19 model. A fixed size of (224 * 224) RGB image was given as input to this network.
+### Creating A Pull Request
 
-**Implementation**
 
-•	We had data in 5 classes ({'keyboard': 0, 'laptop': 1, 'mobile': 2, 'mouse': 3, 'television': 4}) so we divided the whole data into train, test and validation dataset.
 
-•	Then reshaped the data into (224x224) for input in vgg network.
+## Authors
 
-•	To prevent weight changes throughout epochs, we placed the trainable layers in vgg to false or freeze. 
+* **Akshat Tamrakar** - ** - [Akshat Tamrakar](https://github.com/Akshat103) - *Built ReadME Template*
 
-•	We applied early stopping for minimum validation loss.
+## Acknowledgements
 
-•	Next, we trained the model for 10 epochs.
-
-•	Refer to notebook for detailed explanation.
-            
-**Deployment**
-
-The model deployment
--vg99 deep learning model
-
-**Description of the web application**
-
-The web application uses simple techniques for its implementation.
-
-- **HTML & CSS** for the frontend part.
-- **Flask** is used in backend.
-
-**Observation**
-
-•Got 100% train accuracy and 94.90% validation accuracy with 0.1521 validation loss.
-
- ![img111](https://user-images.githubusercontent.com/111306079/211804409-2e7888b2-fd80-4657-8cf4-4563a2847f37.png)
-
-•Accuracy for training and validation data
-
- ![img222](https://user-images.githubusercontent.com/111306079/211804658-27653656-7e95-447e-9f80-c932fb7c4ed5.png)
-
-Loss for training and validation data
+* [Ansh Kanungo](https://github.com/Anshkanungo)
+* [Akshat Tamrakar](https://github.com/Akshat103)
+* [Rashi Vaidya](https://github.com/rashivaidya/)
